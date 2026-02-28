@@ -71,6 +71,24 @@
       </div>
     </header>
 
+    <!-- ===== VIDEO SECTION ===== -->
+    <section class="py-12 md:py-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="relative w-full border border-line bg-bgpanel overflow-hidden" style="padding-bottom:56.25%"
+             onmouseenter="this.querySelector('iframe').contentWindow.postMessage('{&quot;event&quot;:&quot;command&quot;,&quot;func&quot;:&quot;playVideo&quot;}','*')"
+             onmouseleave="this.querySelector('iframe').contentWindow.postMessage('{&quot;event&quot;:&quot;command&quot;,&quot;func&quot;:&quot;pauseVideo&quot;}','*')">
+          <iframe
+            class="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/df9p2JqABwI?enablejsapi=1&rel=0&modestbranding=1&color=white"
+            title="Agriaid Demo Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== IMPACT SECTION WITH 3-COL GRID ===== -->
     <section>
       <div class="max-w-5xl mx-auto px-6 py-14 md:py-20">
